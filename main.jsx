@@ -26,31 +26,44 @@ ReactDOM.render(<Nav></Nav>, document.body.querySelector('header'))
 
 function Home(){
     return <div className="center">
-        <h2>Nom</h2>
-        <h2>Prénom</h2>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab doloremque magni minima quaerat cum numquam maiores assumenda alias enim fugiat, consectetur similique iste, est, inventore ea! Nesciunt ad ducimus earum.</h3>
+        <img src="img/avatar.svg" alt="" />
+        <h2>Bruneel</h2>
+        <h2>Valentin</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab doloremque magni minima quaerat cum numquam maiores assumenda alias enim fugiat, consectetur similique iste, est, inventore ea! Nesciunt ad ducimus earum.</p>
     </div>
 }
 ReactDOM.render(<Home/>, document.body.querySelector('section'))
+function Jpp(){
+    return <div className="center">
+        <h1>Technologies</h1>
+        <div className="flex">
+            <div className="card">
+                <p>em ipsum dolor sit amet consectet</p>
+                <p>em ipsum dolor sit amet consectetem ipsum dolor sit amet consectet</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloremque natus aspernatur, quod delectus quas harum quia rem neque? Odit neque officiis minus facere architecto consequatur. Sit veniam repudiandae vitae.</p>
+            </div>
+            <div className="card">
+                <p>em ipsum dolor sit amet consectet</p>
+                <p>em ipsum dolor sit amet consectetem ipsum dolor sit amet consectet</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloremque natus aspernatur, quod delectus quas harum quia rem neque? Odit neque officiis minus facere architecto consequatur. Sit veniam repudiandae vitae.</p>
+            </div>
+            <div className="card">
+                <p>em ipsum dolor sit amet consectet</p>
+                <p>em ipsum dolor sit amet consectetem ipsum dolor sit amet consectet</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloremque natus aspernatur, quod delectus quas harum quia rem neque? Odit neque officiis minus facere architecto consequatur. Sit veniam repudiandae vitae.</p>
+            </div>
+            <div className="card">
+                <p>em ipsum dolor sit amet consectet</p>
+                <p>em ipsum dolor sit amet consectetem ipsum dolor sit amet consectet</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloremque natus aspernatur, quod delectus quas harum quia rem neque? Odit neque officiis minus facere architecto consequatur. Sit veniam repudiandae vitae.</p>
+            </div>
+        </div>
+    </div>
+}
 
-// function Sectioncards(){
-//     return
-//         <div className="center">
-//             {/* <h1></h1>
-//             <div className="cards flex">
-//                 <div className="card">
-//                     <div className="cardIcon">
+ ReactDOM.render(<Jpp/>, document.getElementById("seconde"))
 
-//                     </div>
-//                     <div className="cardBody">
-//                         <h2>technology</h2>
-//                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique eligendi, quisquam ut ab quia illo ipsam vitae rerum aliquid exercitationem cum rem harum dolorum quasi illum. Voluptatibus nisi aperiam error.</p>
-//                     </div>
-//                 </div>
-//             </div> */}
-//         </div>
-// }
-// ReactDOM.render(<Sectioncards/>, document.body.querySelector('section'))
+
 function Footer(){
     return <div className="center">
         <div className="ul">
