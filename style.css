@@ -30,7 +30,6 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
 }
 /* A elements that don't have a class get default styles */
 a:not([class]) {
@@ -71,7 +70,7 @@ body {
 }
 .flex {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 .center {
   margin: 0 auto;
@@ -80,21 +79,142 @@ body {
 nav {
   background-color: #428bca;
   display: block;
+  padding: 10px 0;
+}
+nav ul {
+  margin: 0;
 }
 nav li {
   width: 33%;
   text-align: center;
 }
+nav li:nth-of-type(2) button {
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
 nav li button {
   width: 100%;
+  background-color: transparent;
+  line-height: 50px;
+  outline: none;
+  border: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-right: 2px solid yellow;
+  border-left: 2px solid yellow;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s linear;
+}
+nav li button:hover {
+  border-top: 2px solid yellow;
+  border-bottom: 2px solid yellow;
+}
+section {
+  padding: 65px 0;
 }
 #presentation {
   text-align: center;
+  background-color: #f2f2f2;
 }
 #presentation .center {
+  background-color: #428bca;
   width: 600px;
-  padding: 10px;
+  padding: 40px 75px;
+  border-radius: 12px;
 }
 #presentation .center img {
   margin: 0 auto;
+  margin-bottom: 15px;
+}
+#presentation .center h2 {
+  padding-bottom: 5px;
+}
+#presentation .center p {
+  padding: 10px 0;
+}
+#seconde {
+  background-color: #B3E8E5;
+  text-align: center;
+}
+#seconde h2 {
+  padding-bottom: 35px;
+  font-size: 2rem;
+}
+#seconde .card {
+  width: calc(25% - 20px);
+  margin: 10px;
+  padding: 0 15px;
+  border: 1px solid black;
+  padding: 40px 35px;
+  position: relative;
+  background-color: #f2f2f2;
+}
+#seconde .card::before {
+  display: block;
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#seconde .card:nth-of-type(1)::before {
+  background-image: url(img/js.png);
+}
+#seconde .card:nth-of-type(2)::before {
+  background-image: url(img/js.png);
+}
+#seconde .card:nth-of-type(3)::before {
+  background-image: url(img/js.png);
+}
+#seconde .card:nth-of-type(4)::before {
+  background-image: url(img/js.png);
+}
+#seconde .card img {
+  width: 35px;
+  height: 35px;
+}
+footer {
+  padding: 35px 0;
+  background-color: #f2f2f2;
+}
+footer ul {
+  display: flex;
+}
+footer ul li {
+  margin: auto;
+  text-align: left;
+  padding: 5px 0;
+  display: block;
+}
+footer ul li a {
+  position: relative;
+}
+footer ul li:nth-of-type(2) a::before {
+  margin: auto;
+  background-image: url(img/linkedin.png);
+  display: block;
+  content: '';
+  width: 64px;
+  height: 64px;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: -70px;
+  transform: translate(-50%, -50%);
+}
+footer ul li:nth-of-type(3) a::before {
+  margin: auto;
+  display: block;
+  content: '';
+  width: 64px;
+  height: 64px;
+  background-size: cover;
+  background-image: url(img/github.png);
+  position: absolute;
+  top: 50%;
+  left: -70px;
+  transform: translate(-50%, -50%);
 }

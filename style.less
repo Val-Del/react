@@ -34,7 +34,7 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+
 }
 
 /* A elements that don't have a class get default styles */
@@ -77,12 +77,14 @@ li {
 }
 // ---------------------------------
 @colora: #428bca;
+@colorb: #B3E8E5;
+@colorc: rgb(242, 242, 242);
 body{
     margin: 0;
 }
 .flex {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 .center {
     margin: 0 auto;
@@ -91,22 +93,161 @@ body{
 nav {
     background-color: @colora;
     display: block;
+    padding: 10px 0;
+    ul {
+        margin: 0;
+    }
     li{
         width: 33%;
         text-align: center;
+        &:nth-of-type(2) button {
+            border-right: 2px solid transparent;
+            border-left: 2px solid transparent;
+        }
+    
         button {
             width: 100%;
+            background-color: transparent;
+            line-height: 50px;
+            outline: none;
+            border: 0;
+            font-size: 2rem;
+            text-transform: uppercase;
+            border-right: 2px solid yellow;
+            border-left: 2px solid yellow;
+            border-top: 2px solid transparent;
+                border-bottom: 2px solid transparent;
+            transition: all 0.5s linear;
+            
+            &:hover {
+                border-top: 2px solid yellow;
+                border-bottom: 2px solid yellow;
+            }
         }
     }
 
 }
+section {
+    padding: 65px 0;
+}
 #presentation {
     text-align: center;
+    background-color: rgb(242, 242, 242);
     .center {
+        background-color: @colora;
         width: 600px;
-        padding: 10px;
+        padding: 40px 75px;
+        border-radius: 12px;
         img {
             margin: 0 auto;
+            margin-bottom: 15px;
+        }
+        h2 {
+            padding-bottom: 5px;
+        }
+        p {
+            padding: 10px 0;
+        }
+    }
+}
+#seconde {
+    background-color: @colorb;
+    text-align: center;
+    h2 {
+        padding-bottom: 35px;
+        font-size: 2rem;
+    }
+    .card {
+        width: calc(25% - 20px);
+        margin: 10px;
+        padding: 0 15px;
+        border: 1px solid black;
+        padding: 40px 35px;
+        position: relative;
+        background-color: rgb(242, 242, 242);
+        &::before {
+            display: block;
+            content: '';
+            width: 50px;
+            height: 50px;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &:nth-of-type(1){
+            &::before {
+                background-image: url(img/js.png);
+            }
+        }
+        &:nth-of-type(2){
+            &::before {
+                background-image: url(img/js.png);
+            }
+        }        
+        &:nth-of-type(3){
+            &::before {
+                background-image: url(img/js.png);
+            }
+        }        
+        &:nth-of-type(4){
+            &::before {
+                background-image: url(img/js.png);
+            }
+        }        
+
+        img {
+            width: 35px;
+            height: 35px;
+
+        }
+    }
+}
+footer {
+    padding: 35px 0;
+    background-color: @colorc;
+    ul {
+        display: flex;
+        li {
+            margin: auto;
+            text-align: left;
+            padding: 5px 0;
+            display: block;
+            a{
+                position: relative;
+            }
+            &:nth-of-type(2) a {
+                &::before {
+                    margin: auto;
+                    background-image: url(img/linkedin.png);
+                    display: block;
+                    content: '';
+                    width: 64px;
+                    height: 64px;
+                    background-size: cover;
+                    position: absolute;
+                    top: 50%;
+                    left: -70px;
+                    transform: translate(-50%, -50%);
+                }
+                
+            }
+            &:nth-of-type(3) a {
+                &::before {
+                    margin: auto;
+                    display: block;
+                    content: '';
+                    width: 64px;
+                    height: 64px;
+                    background-size: cover;
+                    background-image: url(img/github.png);
+                    position: absolute;
+                    top: 50%;
+                    left: -70px;
+                    transform: translate(-50%, -50%);
+                }
+                    
+            }
         }
     }
 }

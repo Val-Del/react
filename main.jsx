@@ -8,9 +8,6 @@ return <button>{name}</button>
 }
 function Nav() {
     return <nav>
-        {/* <NavButton name="accueil"/>
-        <NavButton name="compétences"/>
-        <NavButton name="contact"/> */}
         <div className="center">
             <ul className="flex">
                 <li><NavButton name="accueil"/></li>
@@ -22,7 +19,6 @@ function Nav() {
 }
 
 ReactDOM.render(<Nav></Nav>, document.body.querySelector('header'))
-// ReactDOM.render(<NavButton name="accueil"/>, document.body.querySelector('header'))
 
 function Home(){
     return <div className="center">
@@ -35,9 +31,31 @@ function Home(){
 ReactDOM.render(<Home/>, document.body.querySelector('section'))
 function Jpp(){
     return <div className="center">
-        <h1>Technologies</h1>
+        <h2>Technologies</h2>
         <div className="flex">
             <div className="card">
+                
+                <p>em ipsum dolor sit amet consectet</p>
+                <p>em ipsum dolor sit amet consectetem ipsum dolor sit amet consectet</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloremque natus aspernatur, quod delectus quas harum quia rem neque? Odit neque officiis minus facere architecto consequatur. Sit veniam repudiandae vitae.</p>
+            </div>
+            <div className="card">
+                <p>em ipsum dolor sit amet consectet</p>
+                <p>em ipsum dolor sit amet consectetem ipsum dolor sit amet consectet</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloremque natus aspernatur, quod delectus quas harum quia rem neque? Odit neque officiis minus facere architecto consequatur. Sit veniam repudiandae vitae.</p>
+            </div>
+            <div className="card">
+                <p>em ipsum dolor sit amet consectet</p>
+                <p>em ipsum dolor sit amet consectetem ipsum dolor sit amet consectet</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloremque natus aspernatur, quod delectus quas harum quia rem neque? Odit neque officiis minus facere architecto consequatur. Sit veniam repudiandae vitae.</p>
+            </div>
+            <div className="card">
+                <p>em ipsum dolor sit amet consectet</p>
+                <p>em ipsum dolor sit amet consectetem ipsum dolor sit amet consectet</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloremque natus aspernatur, quod delectus quas harum quia rem neque? Odit neque officiis minus facere architecto consequatur. Sit veniam repudiandae vitae.</p>
+            </div>
+            <div className="card">
+                
                 <p>em ipsum dolor sit amet consectet</p>
                 <p>em ipsum dolor sit amet consectetem ipsum dolor sit amet consectet</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem doloremque natus aspernatur, quod delectus quas harum quia rem neque? Odit neque officiis minus facere architecto consequatur. Sit veniam repudiandae vitae.</p>
@@ -66,11 +84,11 @@ function Jpp(){
 
 function Footer(){
     return <div className="center">
-        <div className="ul">
-            <li>Valentin Bruneel 2022</li>
-            <li>Linkedin</li>
-            <li>github</li>
-        </div>
+            <ul>
+                <li>Valentin Bruneel 2022</li>
+                <li><a target="blank" href="https://www.linkedin.com/in/valentin-bruneel-7880a8202/">Linkedin</a></li>
+                <li><a href="">Github</a></li>
+            </ul>
     </div>
 }
 ReactDOM.render(<Footer/>, document.body.querySelector('footer'))
